@@ -6,7 +6,7 @@ from wordcloud import WordCloud, ImageColorGenerator
 import numpy as np
 import PIL.Image as Image
 
-file = open("NickName.txt",encoding='utf-8')
+file = open("NickName.txt", encoding='utf-8')
 text = file.read()
 
 wordlist = jieba.cut(text, cut_all=True)

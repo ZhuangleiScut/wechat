@@ -65,7 +65,7 @@ def handle_receive_msg(msg):
         msg_share_url
     face_bug = msg_content
 
-    ##将信息存储在字典中，每一个msg_id对应一条信息
+    # 将信息存储在字典中，每一个msg_id对应一条信息
     msg_information.update(
         {
             msg_id: {
@@ -128,7 +128,7 @@ def handle_receive_msg(msg):
         msg_share_url
     face_bug = msg_content
 
-    ##将信息存储在字典中，每一个msg_id对应一条信息
+    # 将信息存储在字典中，每一个msg_id对应一条信息
     msg_information.update(
         {
             msg_id: {
@@ -140,7 +140,7 @@ def handle_receive_msg(msg):
     )
 
 
-##这个是用于监听是否有消息撤回
+# 这个是用于监听是否有消息撤回
 @itchat.msg_register(NOTE, isFriendChat=True, isGroupChat=True, isMpChat=True)
 def information(msg):
     # 这里如果这里的msg['Content']中包含消息撤回和id，就执行下面的语句
